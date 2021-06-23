@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		63C201B9219FFCF2003EA25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201B8219FFCF2003EA25E /* AppDelegate.swift */; };
-		63C201BB219FFCF2003EA25E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201BA219FFCF2003EA25E /* ViewController.swift */; };
 		63C201BE219FFCF2003EA25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C201BC219FFCF2003EA25E /* Main.storyboard */; };
 		63C201C0219FFCF4003EA25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C201BF219FFCF4003EA25E /* Assets.xcassets */; };
 		63C201C3219FFCF4003EA25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C201C1219FFCF4003EA25E /* LaunchScreen.storyboard */; };
+		63C201CB219FFEDA003EA25E /* BasicAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201CA219FFEDA003EA25E /* BasicAnimationsViewController.swift */; };
+		63C201CD21A003D7003EA25E /* SpringAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201CC21A003D7003EA25E /* SpringAnimationsViewController.swift */; };
+		63C201CF21A00613003EA25E /* KeyFrameAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201CE21A00613003EA25E /* KeyFrameAnimationsViewController.swift */; };
+		63C201D121A007F1003EA25E /* ConstraintAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201D021A007F1003EA25E /* ConstraintAnimationViewController.swift */; };
+		63C201D321A00A5A003EA25E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201D221A00A5A003EA25E /* Constants.swift */; };
+		63C201D921A03CF3003EA25E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C201D821A03CF3003EA25E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63C201B5219FFCF2003EA25E /* AnimationDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C201B8219FFCF2003EA25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63C201BA219FFCF2003EA25E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63C201BD219FFCF2003EA25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63C201BF219FFCF4003EA25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C201C2219FFCF4003EA25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C201C4219FFCF4003EA25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C201CA219FFEDA003EA25E /* BasicAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationsViewController.swift; sourceTree = "<group>"; };
+		63C201CC21A003D7003EA25E /* SpringAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationsViewController.swift; sourceTree = "<group>"; };
+		63C201CE21A00613003EA25E /* KeyFrameAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationsViewController.swift; sourceTree = "<group>"; };
+		63C201D021A007F1003EA25E /* ConstraintAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAnimationViewController.swift; sourceTree = "<group>"; };
+		63C201D221A00A5A003EA25E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		63C201D821A03CF3003EA25E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				63C201B8219FFCF2003EA25E /* AppDelegate.swift */,
-				63C201BA219FFCF2003EA25E /* ViewController.swift */,
+				63C201CA219FFEDA003EA25E /* BasicAnimationsViewController.swift */,
+				63C201CC21A003D7003EA25E /* SpringAnimationsViewController.swift */,
+				63C201CE21A00613003EA25E /* KeyFrameAnimationsViewController.swift */,
+				63C201D021A007F1003EA25E /* ConstraintAnimationViewController.swift */,
+				63C201D421A00B58003EA25E /* Utilities */,
 				63C201BC219FFCF2003EA25E /* Main.storyboard */,
 				63C201BF219FFCF4003EA25E /* Assets.xcassets */,
 				63C201C1219FFCF4003EA25E /* LaunchScreen.storyboard */,
 				63C201C4219FFCF4003EA25E /* Info.plist */,
 			);
 			path = AnimationDev;
+			sourceTree = "<group>";
+		};
+		63C201D421A00B58003EA25E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63C201D221A00A5A003EA25E /* Constants.swift */,
+				63C201D821A03CF3003EA25E /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C201BB219FFCF2003EA25E /* ViewController.swift in Sources */,
+				63C201CD21A003D7003EA25E /* SpringAnimationsViewController.swift in Sources */,
+				63C201CB219FFEDA003EA25E /* BasicAnimationsViewController.swift in Sources */,
+				63C201D121A007F1003EA25E /* ConstraintAnimationViewController.swift in Sources */,
 				63C201B9219FFCF2003EA25E /* AppDelegate.swift in Sources */,
+				63C201CF21A00613003EA25E /* KeyFrameAnimationsViewController.swift in Sources */,
+				63C201D321A00A5A003EA25E /* Constants.swift in Sources */,
+				63C201D921A03CF3003EA25E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
